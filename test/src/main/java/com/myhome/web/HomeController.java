@@ -34,7 +34,7 @@ public class HomeController {
 	public ResponseEntity<Map<String, Object>> test(Model model //, @RequestParam ("name") String name
 			) {
 		//특정아이디조회 ex)
-		String name = "jongdoo2001";
+		String name = "XD";
 		
 		//아이디로 가장 최근 접속일 조회
 		Map<String, Object> result = service.check(name);

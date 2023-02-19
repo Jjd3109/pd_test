@@ -29,13 +29,13 @@ public class heroService {
 		
 		if(!data.isEmpty()) {
 			//아이디 값이 있을경우 
-			result.put("result", "success");
-			return result;
+			result.put("result", "success");			
 		}else {
 			//아이디값이 없을경우
-			result.put("result", "There is no record");
-			return result;
+			result.put("result", "There is no record");	
 		}
+		
+		return result;
 		
 	}
 	
