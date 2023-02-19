@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="heroMapper">
+	<select id="checkData" resultType="loginVo">
+		select si.USER_ID, li.LAST_AC_DT, li.TOKEN, si.MOBILE_TYPE 
+		from test.superhere_info si
+		join test.login_info li 
+		on si.ID = li.USER_ID
+		where si.USER_ID  = #{name}
+		ORDER BY li.id desc limit 1;
+	</select>
+</mapper>
